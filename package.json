@@ -22,6 +22,7 @@
     "dev": "DEBUG=ghost:* grunt dev",
     "test": "grunt validate --verbose",
     "setup": "yarn install && knex-migrator init && grunt symlink && grunt init || true",
+    "setupNoMigrator": "yarn install && grunt symlink && grunt init || true",
     "lint": "grunt lint"
   },
   "engines": {
